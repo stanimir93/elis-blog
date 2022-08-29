@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/elis-blog/static/css/main.2269717c.css",
+    "main.js": "/elis-blog/static/js/main.1cf0f14d.js",
+    "static/js/787.16e69002.chunk.js": "/elis-blog/static/js/787.16e69002.chunk.js",
+    "index.html": "/elis-blog/index.html",
+    "main.2269717c.css.map": "/elis-blog/static/css/main.2269717c.css.map",
+    "main.1cf0f14d.js.map": "/elis-blog/static/js/main.1cf0f14d.js.map",
+    "787.16e69002.chunk.js.map": "/elis-blog/static/js/787.16e69002.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2269717c.css",
+    "static/js/main.1cf0f14d.js"
+  ]
+}
