@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/elis-blog/static/css/main.2269717c.css",
-    "main.js": "/elis-blog/static/js/main.1cf0f14d.js",
+    "main.css": "/elis-blog/static/css/main.3c5dae18.css",
+    "main.js": "/elis-blog/static/js/main.45db1468.js",
     "static/js/787.16e69002.chunk.js": "/elis-blog/static/js/787.16e69002.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/elis-blog/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/elis-blog/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "index.html": "/elis-blog/index.html",
-    "main.2269717c.css.map": "/elis-blog/static/css/main.2269717c.css.map",
-    "main.1cf0f14d.js.map": "/elis-blog/static/js/main.1cf0f14d.js.map",
+    "main.3c5dae18.css.map": "/elis-blog/static/css/main.3c5dae18.css.map",
+    "main.45db1468.js.map": "/elis-blog/static/js/main.45db1468.js.map",
     "787.16e69002.chunk.js.map": "/elis-blog/static/js/787.16e69002.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2269717c.css",
-    "static/js/main.1cf0f14d.js"
+    "static/css/main.3c5dae18.css",
+    "static/js/main.45db1468.js"
   ]
 }
