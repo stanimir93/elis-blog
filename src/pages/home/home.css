@@ -1,0 +1,28 @@
+.home {
+    height: inherit;
+}
+
+.home_quote {
+    max-width: 600px;
+    min-height: 350px;
+}
+
+.home_search {
+position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .home_quote {
+        /*max-width: 650px;*/
+        min-height: auto;
+    }
+    .home_search {
+        position: static;
+    }
+}
+/*.home_search {*/
+/*    bottom: 200px;*/
+/*}*/

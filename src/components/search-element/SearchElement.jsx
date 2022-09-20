@@ -1,17 +1,23 @@
-import React, {useEffect, useState} from "react";
+import './searchelement.css'
+import React, {useEffect, useRef, useState} from "react";
 import {useLocation, useNavigate} from "react-router-dom";
 
 export default function SearchElement(props) {
+    const searchVal = props.searchVal;
+    const setSearchVal= props.setSearchVal
     const navigate = useNavigate()
+    const location = useLocation();
+    const search = useRef(null)
+
     // const location = useLocation()
     const {articles, setSearchResults} = props;
-    const [searchVal, setSearchVal] = useState();
 
     function checkKey(ev) {
         if (ev.code === 'Enter') onSearch();
     }
 
     function onSearch() {
+        if (!searchVal) return;
         const term = searchVal;
         let searchResults = articles.map( a => {
             const firstPara = searchHTML(a, term);
@@ -24,7 +30,10 @@ export default function SearchElement(props) {
         })
         searchResults = searchResults.filter(r => r !== null);
         setSearchResults(searchResults);
-        navigate('../search');
+        if(location.pathname !== '/search') navigate('../search');
+        search.current.valua = '';
+
+
 
         function searchHTML(article, term){
             let match = ''
@@ -44,7 +53,7 @@ export default function SearchElement(props) {
                 window.memoedArticles['article' + article.id] = text
             }
             else text =  window.memoedArticles['article' + article.id];
-            // search text
+            // search-element text
             const index = text.toLowerCase().indexOf(term.toLowerCase())
             if (index > 0) {
                 text = text.substring(index, index + 200);
@@ -57,7 +66,7 @@ export default function SearchElement(props) {
     }
     function onSearchInput(ev) {
         setSearchVal(ev.target.value)
-        // if (location.pathname.includes('search')) onSearch();
+        // if (location.pathname.includes('search-element')) onSearch();
     }
 
 
@@ -66,8 +75,10 @@ export default function SearchElement(props) {
         // return document.remove
     })
     return (
-        <>
-            <input onKeyUp={checkKey} type='text' placeholder='search term' onInput={onSearchInput}/>
-            <button onClick={onSearch}>Search</button></>
+        <span className='search-element d-flex align-items-center'>
+            {/*<p className='text-center fs-5'>Search</p>*/}
+            <input className='rounded me-2' ref={search} onKeyUp={checkKey} type='text' value={searchVal} placeholder='search term' onChange={onSearchInput}/>
+            <button className='btn btn-dark' onClick={onSearch}>Search</button>
+        </span>
     )
 }

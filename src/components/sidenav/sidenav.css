@@ -1,0 +1,28 @@
+aside nav {
+    width: 300px;
+}
+
+aside nav li {
+    list-style-type:none;
+}
+
+aside nav li a {
+    text-decoration: none;
+    position: relative;
+    color: var(--bs-pink);
+}
+aside nav li a::after {
+    height: 2px;
+    background-color: var(--bs-pink);
+    content: '';
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    position: absolute;
+    transition: width 0.2s ease-out;
+}
+
+
+aside nav li a.active::after {
+    width: 100%;
+}

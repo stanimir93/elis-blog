@@ -1,3 +1,9 @@
 card h2 {
     color: red;
 }
+
+.card_p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

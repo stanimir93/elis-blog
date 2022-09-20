@@ -24,12 +24,12 @@ export default function Card(props) {
     // })
 
     return (
-        <div>
+        <div className='my-5'>
             <h3 onClick={handleClick}>{title}</h3>
-            <img src={imageUrl} alt='blog-photo'/>
-            <p dangerouslySetInnerHTML={createMarkup()}/>
-            <div>{date}</div>
-            <button onClick={handleClick}>Read Article</button>
+            <div className='my-3'>{date}</div>
+            <p className='card_p' dangerouslySetInnerHTML={createMarkup()}/>
+            <div className='my-3'><img src={imageUrl} alt='blog-photo'/></div>
+            <button className='btn btn-dark' onClick={handleClick}>Read Article</button>
         </div>
     )
 

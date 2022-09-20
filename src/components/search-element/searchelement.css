@@ -1,0 +1,11 @@
+.search-element {
+    max-width: 350px;
+}
+
+.search-element input {
+
+    height: 40px;
+}
+.search-element button {
+    height: 40px;
+}
