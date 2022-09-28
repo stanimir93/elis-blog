@@ -1,28 +1,25 @@
-.home {
-    height: inherit;
+.homepage-img {
+  background-image: url("/public/images/image014.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.home_quote {
-    max-width: 600px;
-    min-height: 350px;
+.quote {
+  max-width: 450px;
+  font-style: italic;
+  font-size: 20px;
 }
 
-.home_search {
-position: absolute;
-    bottom: 120px;
-    left: 0;
-    right: 0;
+@media only screen and (max-width: 900px) {
+  .quote {
+    font-size: 14px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-    .home_quote {
-        /*max-width: 650px;*/
-        min-height: auto;
-    }
-    .home_search {
-        position: static;
-    }
+@media only screen and (min-width: 1300px) {
+  .quote {
+    font-size: 23px;
+    max-width: 550px;
+  }
 }
-/*.home_search {*/
-/*    bottom: 200px;*/
-/*}*/

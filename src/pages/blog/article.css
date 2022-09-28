@@ -3,3 +3,16 @@
   top: 0;
   background-color: white;
 }
+
+.article-wrapper .img-hidden {
+  display: none;
+}
+
+h3 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+h5 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}

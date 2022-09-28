@@ -34,6 +34,8 @@ main {
   /*min-height: 400px;*/
   /*margin-left: calc(3/12*100%);*/
   /*width: calc(9/12*100%);*/
+  display: flex;
+  justify-content: start;
 }
 .width-content {
   max-width: 786px;
@@ -47,6 +49,12 @@ main {
 @media only screen and (max-width: 380px) {
   .height-main {
     min-height: calc(100vh - 100px);
+  }
+}
+@media only screen and (min-width: 1820px) {
+  main {
+    transform: translateX(-150px);
+    justify-content: center;
   }
 }
 /*!*@media only screen and (max-width: 400px) {*!*/

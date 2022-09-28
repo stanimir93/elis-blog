@@ -27,15 +27,14 @@ export default function Article(props) {
   }, 0);
 
   return (
-    <div className="width-content">
-      <div className="mb-3 back-btn-article ">
+    <div className="width-content article-wrapper">
+      <div className="py-1 mb-4 back-btn-article d-flex align-items-center border-bottom border-1">
         <button
           className="btn btn-link fs-3 p-0"
           onClick={() => navigation(-1)}
         >
           <i className="bi bi-arrow-left"></i>
         </button>
-        <p></p>
       </div>
       {articles && (
         <div

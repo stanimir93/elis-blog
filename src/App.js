@@ -37,7 +37,7 @@ function App() {
       <div className="d-md-flex height-main position-relative">
         <SideNav articles={articles} />
         {/*<main className={pageClassNames + 'p-5'}>*/}
-        <main className="p-5 container-fluid">
+        <main className="px-5 py-4 container-fluid mx-xl-5">
           <Routes>
             <Route
               path="/"

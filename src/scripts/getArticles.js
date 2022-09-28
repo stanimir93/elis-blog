@@ -25,8 +25,9 @@ function parseArticle(html, id) {
     Date.parse(wrapper.querySelector(".date").textContent)
   );
   const firstPara = wrapper.querySelector("p").textContent;
-  const imageUrl = wrapper.querySelector("img");
+  const imageUrl = wrapper.querySelector(".img-hidden")?.src;
   const labels = [...wrapper.querySelectorAll(".labels li")];
+  console.log(imageUrl);
   let subheadings = [];
   wrapper
     .querySelectorAll("h3")
