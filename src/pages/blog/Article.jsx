@@ -27,7 +27,11 @@ export default function Article(props) {
   }, 0);
 
   return (
+<<<<<<< HEAD
     <div className="width-content article-wrapper">
+=======
+    <div className="width-content">
+>>>>>>> 6b05d53c58b52c72561e388b7e8f4abc1ccf0279
       <div className="py-1 mb-4 back-btn-article d-flex align-items-center border-bottom border-1">
         <button
           className="btn btn-link fs-3 p-0"
