@@ -24,10 +24,11 @@ export default function Article(props) {
   setTimeout(() => {
     const hash = window.location.hash.substring(1);
     if (hash) document.getElementById(hash)?.scrollIntoView();
+    else document.getElementById("article-wrapper").scrollIntoView();
   }, 0);
 
   return (
-    <div className="width-content article-wrapper">
+    <div id="article-wrapper" className="width-content article-wrapper">
       <div className="py-1 mb-4 back-btn-article d-flex align-items-center border-bottom border-1">
         <button
           className="btn btn-link fs-3 p-0"
