@@ -1,6 +1,4 @@
 import React from "react";
-import Card from "../../components/card/Card";
-import uuid from "react-uuid";
 
 export default function About(props) {
   return (
@@ -64,7 +62,7 @@ export default function About(props) {
           outcomes you can <a href="/blog-posts">read here!</a>
         </p>
       </section>
-      <section className="pt-5">
+      <section className="pt-5 video">
         <iframe
           width="560"
           height="315"

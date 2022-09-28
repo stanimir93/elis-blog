@@ -27,17 +27,18 @@ function App() {
 
   const location = useLocation();
   const homeLocation = location.pathname === "/";
-  // const pageClassNames = homeLocation ? 'd-flex flex-column justify-content-between ': '';
+  // const pageClassNames = homeLocation ? 'homepage-img ': '';
+  const pageClassNames = '';
   useEffect(() => {
     getArticles().then(setArticles).catch(console.error);
   }, []);
   return (
     <div className="height-min-100">
       <Header className="bg-dark text-light" articles={articles} />
-      <div className="d-md-flex height-main position-relative">
-        <SideNav articles={articles} />
+      <div className="d-lg-flex height-main position-relative">
+        <SideNav className='bg-light' articles={articles} />
         {/*<main className={pageClassNames + 'p-5'}>*/}
-        <main className="px-5 py-4 container-fluid mx-xl-5">
+        <main className={pageClassNames + "px-5  container-fluid pt-4"}>
           <Routes>
             <Route
               path="/"

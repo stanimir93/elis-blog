@@ -7,7 +7,7 @@ export default function Articles(props) {
     return (
         <div className='width-content'>
 
-            <section>
+            <section className='mt-3'>
                 <h1>Blog Posts</h1>
             </section>
             <section>

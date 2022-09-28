@@ -24,7 +24,7 @@ export default function SearchElement(props) {
             if (!firstPara) return null;
             const id = a.id;
             const title = a.title;
-            const imageUrl = a?.image;
+            const imageUrl = a?.imageUrl;
             const dateObj = a?.dateObj;
             return {id, firstPara, title, imageUrl, dateObj }
         })
@@ -77,7 +77,7 @@ export default function SearchElement(props) {
     return (
         <span className='search-element d-flex align-items-center'>
             {/*<p className='text-center fs-5'>Search</p>*/}
-            <input className='rounded me-2' ref={search} onKeyUp={checkKey} type='text' value={searchVal} placeholder='search term' onChange={onSearchInput}/>
+            <input className='rounded me-2' ref={search} onKeyUp={checkKey} type='text' value={searchVal} placeholder='' onChange={onSearchInput}/>
             <button className='btn btn-dark' onClick={onSearch}>Search</button>
         </span>
     )

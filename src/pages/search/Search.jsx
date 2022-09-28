@@ -6,7 +6,7 @@ import SearchElement from "../../components/search-element/SearchElement";
 export default function Search(props) {
 
     return (
-        <>
+        <div className=' width-content '>
 
             <section className='mb-4'>
                 <h1>{'Results for ' + props.term}</h1>
@@ -21,6 +21,6 @@ export default function Search(props) {
                 {props?.foundArticles?.map(a => <Card key={uuid()} article={a}/>)}
                 {!props?.foundArticles?.length && <p>Nothing Found!</p>}
             </section>
-        </>
+        </div>
     );
 }

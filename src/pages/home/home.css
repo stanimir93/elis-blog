@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
 }
 
+/*.homepage {*/
+/*  transform: translateX(-150px);*/
+/*}*/
+
 .quote {
   max-width: 450px;
   font-style: italic;
@@ -23,3 +27,14 @@
     max-width: 550px;
   }
 }
+
+/*@media only screen and (min-width: 1820px) {*/
+/*  .homepage {*/
+/*    transform: translateX(-150px);*/
+/*  }*/
+/*}*/
+/*@media only screen and (min-width: 1820px) {*/
+/*  .homepage {*/
+/*    transform: translateX(-150px);*/
+/*  }*/
+/*}*/

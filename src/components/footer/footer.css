@@ -9,3 +9,13 @@ footer {
 footer li {
     list-style-type:none;
 }
+
+footer a,
+footer button{
+    color: var(--bs-pink) !important;
+}
+
+footer button:active,
+footer a:active{
+    color: var(--bs-primary) !important;
+}

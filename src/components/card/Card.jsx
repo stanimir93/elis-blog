@@ -25,15 +25,15 @@ export default function Card(props) {
   //     if (articles) document.querySelector('.article').innerHTML = articles[id - 1]?.html;
   // })
 
-  console.log(imageUrl);
 
   return (
     <div className="my-5 py-4 card-wrapper">
       <h3 role="button" onClick={handleClick}>
         {title}
       </h3>
-      <div
-        className="my-3 image-container"
+      <div onClick={handleClick}
+           role='button'
+        className="my-3 image-container w-100"
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></div>
       <div className="my-3">{date}</div>
