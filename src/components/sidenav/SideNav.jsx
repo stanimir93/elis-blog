@@ -12,7 +12,7 @@ export default function SideNav(props) {
     >
       <img />
       <nav className="">
-        <ul className=" pt-3 sticky-top text-center text-lg-start">
+        <ul className="ps-0 ps-lg-5 pt-3 sticky-top text-center text-lg-start">
           {/* <li className="mb-4">
             <strong className="text-dark text-underline">
               Eliska Sperkova

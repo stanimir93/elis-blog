@@ -16,7 +16,7 @@ export default function Home(props) {
             Dance teacher; a multi-tasking, choreographing rock star who lives
             to inspire and loves to encourage. They are kind of a big deal
           </p>
-            <div className="home_search my-5 py-md-1 max-width-450">
+            <div className="home_search my-lg-5 py-md-1 max-width-450">
                 {/*<p className='text-center fs-5'>Search</p>*/}
                 <SearchElement
                     articles={props?.articles}

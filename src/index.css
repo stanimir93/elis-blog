@@ -116,3 +116,9 @@ code {
 .max-width-450 {
   max-width: 450px;
 }
+
+
+/* nav ul,
+footer ul {
+  padding-left: 0px !important;
+} */
