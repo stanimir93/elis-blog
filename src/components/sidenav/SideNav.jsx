@@ -7,7 +7,9 @@ export default function SideNav(props) {
   return (
     <aside
       className={
-        props.className + " " + " d-flex justify-content-center py-2 sidenav-wrapper  "
+        props.className +
+        " " +
+        " d-flex justify-content-center py-2 sidenav-wrapper  "
       }
     >
       <img />
@@ -29,6 +31,9 @@ export default function SideNav(props) {
           </li>
           <li className="my-2 my-sm-3 my-lg-4">
             <NavLink to="/contact">CONTACT</NavLink>
+          </li>
+          <li className="my-2 my-sm-3 my-lg-4">
+            <NavLink to="/references">REFERENCES</NavLink>
           </li>
           {/*<li className'dropdown-item><SearchElement articles={props?.articles} setSearchResults={props.setSearchResults}/></li>*/}
         </ul>

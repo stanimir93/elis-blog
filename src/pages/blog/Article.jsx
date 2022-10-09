@@ -21,11 +21,11 @@ export default function Article(props) {
   if (articles) subheadings = articles[id - 1]?.subheadings;
   console.log(subheadings);
 
-  setTimeout(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) document.getElementById(hash)?.scrollIntoView();
-    else document.getElementById("article-wrapper").scrollIntoView();
-  }, 0);
+  // setTimeout(() => {
+  //   const hash = window.location.hash.substring(1);
+  //   if (hash) document.getElementById(hash)?.scrollIntoView();
+  //   else document.getElementById("article-wrapper").scrollIntoView();
+  // }, 0);
 
   return (
     <div id="article-wrapper" className="width-content article-wrapper">

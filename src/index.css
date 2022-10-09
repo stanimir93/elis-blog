@@ -117,8 +117,12 @@ code {
   max-width: 450px;
 }
 
-
 /* nav ul,
 footer ul {
   padding-left: 0px !important;
 } */
+
+.references-formatting p {
+  padding-left: 40px;
+  text-indent: -40px;
+}

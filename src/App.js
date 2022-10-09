@@ -13,6 +13,7 @@ import SideNav from "./components/sidenav/SideNav";
 import Contact from "./pages/contact/Contact";
 import Inspirations from "./pages/inpsirations/Inspirations";
 import About from "./pages/about/About";
+import References from "./pages/references/References";
 
 function App() {
   const [articles, setArticles] = useState();
@@ -28,7 +29,7 @@ function App() {
   const location = useLocation();
   const homeLocation = location.pathname === "/";
   // const pageClassNames = homeLocation ? 'homepage-img ': '';
-  const pageClassNames = '';
+  const pageClassNames = "";
   useEffect(() => {
     getArticles().then(setArticles).catch(console.error);
   }, []);
@@ -36,7 +37,7 @@ function App() {
     <div className="height-min-100">
       <Header className="bg-dark text-light" articles={articles} />
       <div className="d-lg-flex height-main position-relative">
-        <SideNav className='bg-light' articles={articles} />
+        <SideNav className="bg-light" articles={articles} />
         {/*<main className={pageClassNames + 'p-5'}>*/}
         <main className={pageClassNames + "px-5  container-fluid pt-4"}>
           <Routes>
@@ -60,10 +61,7 @@ function App() {
               path="/article/:id"
               element={<Article articles={articles} />}
             />
-            <Route
-              path="/inspirations"
-              element={<Inspirations foundArticles={searchResults} />}
-            />
+            <Route path="/references" element={<References />} />
             <Route
               path="/contact"
               element={<Contact foundArticles={searchResults} />}
