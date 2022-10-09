@@ -1,8 +1,6 @@
 import React from "react";
 import "./article.css";
 import { useParams, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import ArticleNav from "../../components/article-nav/ArticleNav";
 
 export default function Article(props) {
   const navigation = useNavigate();
@@ -16,16 +14,6 @@ export default function Article(props) {
   function createMarkup() {
     return { __html: html };
   }
-
-  let subheadings;
-  if (articles) subheadings = articles[id - 1]?.subheadings;
-  console.log(subheadings);
-
-  // setTimeout(() => {
-  //   const hash = window.location.hash.substring(1);
-  //   if (hash) document.getElementById(hash)?.scrollIntoView();
-  //   else document.getElementById("article-wrapper").scrollIntoView();
-  // }, 0);
 
   return (
     <div id="article-wrapper" className="width-content article-wrapper">
@@ -43,7 +31,6 @@ export default function Article(props) {
           dangerouslySetInnerHTML={createMarkup()}
         ></div>
       )}
-      {/* <ArticleNav subheadings={subheadings} /> */}
     </div>
   );
 }

@@ -16,14 +16,11 @@ export default function Card(props) {
   });
 
   function handleClick() {
-    navigate(`../article/${id}`);
+    window.location =`${window.location.origin}/article/${id}`;
   }
   function createMarkup() {
     return { __html: firstPara };
   }
-  // useEffect(()=>{
-  //     if (articles) document.querySelector('.article').innerHTML = articles[id - 1]?.html;
-  // })
 
 
   return (

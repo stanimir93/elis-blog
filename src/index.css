@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   font-family: "Lora", serif;
+  scroll-behavior: auto;
 }
 
 body {
